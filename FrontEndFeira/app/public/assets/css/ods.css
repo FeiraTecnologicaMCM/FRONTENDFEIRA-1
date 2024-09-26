@@ -1,0 +1,80 @@
+/* !CORE PADRÕES! */
+:root {
+    --Branco-cor: #FFF;
+    --Preto-cor: #000;
+    --Vermelho-cor: #E31212;
+    --Cinza-cor: #D9D9D9;
+}
+
+body {
+    display: flex; /* Certifique-se de que o body é um contêiner flex */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0; /* Remova margens padrão do body */
+}
+
+.odscontainer {
+    display: flex; /* Torne o contêiner flexível */
+    flex-direction: column;
+    align-items: center; /* Centraliza o contêiner no corpo */
+    justify-content: center;
+    width: 100%; /* Use toda a largura disponível */
+    max-width: 800px; /* Defina uma largura máxima se necessário */
+    padding: 20px; /* Espaçamento interno */
+    box-sizing: border-box; /* Inclui padding no cálculo da largura */
+}
+
+.odscontainer h1 {
+    font-size: 2.5rem; /* Tamanho responsivo do título */
+    margin: 0; /* Remova margens do h1 */
+    text-align: center; /* Centraliza o texto do título */
+}
+
+.odscontainer p {
+    font-size: 1.25rem; /* Tamanho responsivo do parágrafo */
+    margin: 20px 0; /* Margem acima e abaixo */
+    text-align: justify; /* Justifica o texto */
+    width: 100%; /* Garante que o parágrafo ocupa toda a largura do contêiner */
+    padding: 0; /* Remove padding vertical */
+    line-height: 1.5; /* Melhora a legibilidade */
+}
+
+.odsimg img {
+    width: 100%; /* A imagem ocupa 100% da largura do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do contêiner */
+}
+
+.texto-imagem {
+    display: flex; /* Torna o contêiner da imagem e texto flexível */
+    align-items: center; /* Alinha verticalmente */
+    width: 100%; /* Garante que ocupa toda a largura do contêiner */
+    margin-top: 20px; /* Espaçamento superior */
+}
+
+.imagem-secundaria {
+    width: 35%; /* Define a largura da imagem secundária */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-right: 20px; /* Espaçamento à direita da imagem */
+}
+
+.texto-secundario {
+    width: 60%; /* Define a largura do texto ao lado da imagem */
+    text-align: justify;
+}
+
+h2.subtitulo {
+    font-size: 2rem; /* Tamanho do subtítulo */
+    margin-top: 20px; /* Espaçamento acima do subtítulo */
+    text-align: left; /* Centraliza o subtítulo */
+}
+
+header {
+    width: 92%;
+    padding: 4%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    background-color: var(--Branco-cor);
+}
