@@ -1,0 +1,197 @@
+ * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: white;
+            color: #333;
+            text-align: center;
+        }
+
+        .top-bar {
+            background-color: #000;
+            color: white;
+            padding: 10px;
+        }
+
+        .status-bar {
+            display: flex;
+            justify-content: space-between;
+            font-size: 1.2rem;
+        }
+
+        .logo {
+            margin: 20px 0;
+        }
+
+        .event-info h1 {
+            font-size: 1.8rem;
+            color: #D82E2F;
+        }
+
+        .event-info h2 {
+            font-size: 1.2rem;
+            color: #333;
+        }
+
+        .ods-info {
+            margin: 20px 10px;
+            padding: 10px;
+            text-align: left;
+        }
+
+        .ods-info h3 {
+            font-size: 1.5rem;
+            color: #D82E2F;
+            margin-bottom: 10px;
+        }
+
+        .ods-info p {
+            font-size: 1rem;
+            margin-bottom: 10px;
+        }
+
+        .ods-icons {
+            width: 50%;
+           
+        }
+
+        .ods-list {
+            margin: 20px;
+        }
+
+        .ods-item {
+            margin: 20px 0;
+            padding: 10px;
+            text-align: left;
+        }
+
+        .ods-item img {
+            width: 60px;
+            vertical-align: middle;
+        }
+
+        .ods-item h4 {
+            display: inline-block;
+            font-size: 1.2rem;
+            margin-left: 10px;
+            color: #D82E2F;
+        }
+
+        .ods-item p {
+            font-size: 1rem;
+            margin-left: 70px;
+            text-align: left;
+        }
+
+        footer {
+            margin: 20px 0;
+        }
+
+        footer img {
+            width: 80px;
+        }
+
+        /* Step Container */
+        .step-container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .step-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 30px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            transition: box-shadow 0.3s ease-in-out;
+        }
+
+        .step-box:hover {
+            box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .icon-container {
+            flex: none;
+            margin: 15px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .icon-container img {
+            max-width: 200px;
+            height: auto;
+        }
+
+        .step-info h4 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: red;
+            text-align: center;
+        }
+
+        .step-info p {
+            font-size: 1.05rem;
+            color: #666;
+            text-align: justify;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            /* Centralizar a imagem na seção "O que são ODS" */
+            .ods-info img {
+                display: block;
+                margin: 0 auto;
+                max-width: 90%;
+            }
+
+            /* Responsividade dos cards */
+            .step-box {
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                justify-content: flex-start;
+                text-align: left;
+            }
+
+            .step-info {
+                flex: 1;
+                margin-left: 10px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            .step-info h4 {
+                font-size: 1.2rem;
+                margin: 0;
+                color: #D82E2F;
+                text-align: left;
+                order: 1;
+            }
+
+            .step-info p {
+                font-size: 1rem;
+                margin-top: 10px;
+                text-align: left;
+                order: 2;
+            }
+
+            .icon-container {
+                margin-left: 10px;
+                flex: 0 0 auto;
+                order: 0;
+            }
+
+            .icon-container img {
+                max-width: 100px;
+                height: auto;
+            }
+        }
